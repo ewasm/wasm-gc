@@ -9,7 +9,7 @@ pub fn run(config: &mut Config, module: &mut Module) {
     let analysis = {
         let mut cx = LiveContext::new(&module);
 
-        cx.blacklist.insert("main");
+        //cx.blacklist.insert("main");
         cx.blacklist.insert("__ashldi3");
         cx.blacklist.insert("__ashlti3");
         cx.blacklist.insert("__ashrdi3");
